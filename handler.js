@@ -483,16 +483,15 @@ ketik *.on delete* untuk mematikan pesan ini
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_',
-    premium: 'Perintah ini hanya untuk pengguna _*Premium*_',
-    group: 'Perintah ini hanya dapat digunakan di grup',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi',
-    admin: 'Perintah ini hanya untuk *Admin* grup',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Arif.19*',
-    nsfw: 'NSFW tidak aktif'
+    rowner: 'Este comando só pode ser usado pelo proprietário!',
+    owner: 'Este comando só pode ser usado pelo dono do bot!',
+    mods: 'Este comando só pode ser usado por um adm!',
+    premium: 'Este comando é apenas para membros Premium!',
+    group: 'Este comando só pode ser usado em grupo!',
+    private: 'Este comando só pode ser usado em Chat Privado!',
+    admin: 'Este comando é apenas para adm do grupo!',
+    botAdmin: 'O bot precisa ser Adm para usar este comando!',
+    unreg: 'Registre-se para usar este recurso digitando:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
   }[type]
   if (msg) return m.reply(msg)
 }
