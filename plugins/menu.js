@@ -397,6 +397,7 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 3
+handler.group = true
 
 module.exports = handler
 
