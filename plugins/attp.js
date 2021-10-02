@@ -26,5 +26,6 @@ handler.help = new Array(2).fill('attp').map((v, i) => v + (i + 1) + ' <teks>')
 handler.tags = ['sticker']
 
 handler.command = /^attp[1-2]?$/i
+handler.group = true
 
 module.exports = handler
